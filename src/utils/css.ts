@@ -1,0 +1,1 @@
+export const css = (...args: (string | boolean | undefined | null)[]) => args.filter(c => !!c).join(' ');
