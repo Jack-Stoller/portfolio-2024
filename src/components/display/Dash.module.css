@@ -1,0 +1,15 @@
+.Dash {
+    display: inline-block;
+    vertical-align: middle;
+    align-self: center;
+    overflow: visible;
+    height: 1px;
+    width: 100%;
+}
+
+.Dash line {
+    stroke: currentColor;
+    stroke-width: 1; /* Match the height of the viewBox for proper scaling */
+    stroke-dasharray: 1 4; /* Scales proportionally to the viewBox */
+    stroke-linecap: round;
+}

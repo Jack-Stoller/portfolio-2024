@@ -1,0 +1,6 @@
+.SectionHeading {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto auto minmax(0, 1fr);
+    gap: 0.5rem;
+    align-items: center;
+}

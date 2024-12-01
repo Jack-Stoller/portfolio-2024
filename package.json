@@ -9,7 +9,8 @@
   "dependencies": {
     "@solidjs/start": "^1.0.10",
     "solid-js": "^1.9.2",
-    "vinxi": "^0.4.3"
+    "vinxi": "^0.4.3",
+    "vite-plugin-solid-svg": "^0.8.1"
   },
   "engines": {
     "node": ">=18"

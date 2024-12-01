@@ -27,8 +27,14 @@ export default {
         DEFAULT: '8px',
       },
       boxShadow: {
-        DEFAULT: `0 0 30px 10px ${colors.forest[800]}50`,
-        hard: `2px 2px 30px 10px ${colors.forest[800]}50, 4px 4px 0 ${colors.forest[800]}`,
+        DEFAULT: `0 0 20px 7px ${colors.forest[800]}50`,
+        hard: `2px 2px 20px 7px ${colors.forest[800]}50, 4px 4px 0 ${colors.forest[800]}`,
+      },
+      backgroundImage: {
+        'site': `url('/images/noise.png'), radial-gradient(at 40% 5%, ${colors.forest[200]},  ${colors.forest[400]} 80%)`,
+      },
+      gridTemplateColumns: {
+        'page': '400px minmax(0, 1fr)',
       }
     },
     
