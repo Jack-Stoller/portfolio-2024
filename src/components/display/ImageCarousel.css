@@ -1,0 +1,45 @@
+/* smaller, dark, rounded square */
+.flickity-prev-next-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  background: #333;
+}
+.flickity-prev-next-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+.flickity-prev-next-button:hover {
+  @apply bg-forest-600;
+}
+/* arrow color */
+.flickity-prev-next-button .arrow {
+  fill: white;
+}
+.flickity-prev-next-button.no-svg {
+  color: white;
+}
+/* position outside */
+.flickity-prev-next-button.previous {
+  left: -16px;
+}
+.flickity-prev-next-button.next {
+  right: -16px;
+}
+
+/* position dots in carousel */
+.flickity-page-dots {
+  bottom: 16px;
+}
+/* white circles */
+.flickity-page-dots .flickity-page-dot {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+}
+/* fill-in selected dot */
+.flickity-page-dots .flickity-page-dot.is-selected {
+  background: rgba(255, 255, 255, 0.25);
+}

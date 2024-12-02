@@ -11,7 +11,7 @@ export const Button: ParentComponent<
     <button
       {...(others as any)}
       class={css(
-        `bg-forest-300 hover:bg-forest-400 text-forest-800 border-2 border-forest-500 font-bold py-2 px-4 m-1 rounded shadow-hard`,
+        `bg-forest-300 text-forest-800 border-2 border-forest-500 font-bold text-sm py-1.5 px-4 m-2 rounded shadow-hard`,
         local.class as string
       )}
     />
