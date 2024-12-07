@@ -1,30 +1,43 @@
 /* smaller, dark, rounded square */
 .flickity-prev-next-button {
-  width: 30px;
-  height: 30px;
-  border-radius: 5px;
-  background: #333;
+  width: 36px;
+  height: 36px;
+  /* border-radius: 5px; */
+  color: transparent;
+  background-color: currentColor;
+  background-image: url(/images/image-button.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-color 200ms;
 }
 .flickity-prev-next-button:focus {
   outline: none;
   box-shadow: none;
 }
+.flickity-prev-next-button:focus-visible {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white;
+}
+
 .flickity-prev-next-button:hover {
-  @apply bg-forest-600;
+  color: rgba(255, 255, 255, 0.1);
+  background-color: currentColor;
+  background-image: url(/images/image-button.svg);
 }
 /* arrow color */
 .flickity-prev-next-button .arrow {
-  fill: white;
+  display: none;
 }
 .flickity-prev-next-button.no-svg {
   color: white;
 }
 /* position outside */
 .flickity-prev-next-button.previous {
-  left: -16px;
+  transform: scaleX(-1) translateY(-50%);
+  left: 0.5em;
 }
 .flickity-prev-next-button.next {
-  right: -16px;
+  right: 0.5em;
 }
 
 /* position dots in carousel */
@@ -42,4 +55,13 @@
 /* fill-in selected dot */
 .flickity-page-dots .flickity-page-dot.is-selected {
   background: rgba(255, 255, 255, 0.25);
+}
+
+.flickity-page-dots .flickity-page-dot:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.flickity-page-dots .flickity-page-dot:focus-visible {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-forest-100;
 }

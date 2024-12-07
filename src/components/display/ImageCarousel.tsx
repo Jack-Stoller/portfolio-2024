@@ -21,15 +21,14 @@ const ImageCarousel: Component<ImageCarouselProps> = (props) => {
     new Flickity(carouselRef!, {
       cellAlign: 'center',
       contain: true,
-      selectedAttraction: 0.1,
-      friction: 0.45,
+      selectedAttraction: 0.03,
+      friction: 0.35,
       ...(props.options ?? {}),
     });
   });
 
   return (
     <div
-      class=''
       ref={carouselRef}
       style={{
         width: '100%',
@@ -43,7 +42,7 @@ const ImageCarousel: Component<ImageCarouselProps> = (props) => {
               alt=''
               width={props.width}
               height={props.height}
-              class=''
+              class='rounded-lg'
             />
           </div>
         )}
