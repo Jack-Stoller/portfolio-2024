@@ -121,7 +121,7 @@ export default function App() {
               </li>
             </ul>
           </div>
-
+          {/* 
           <div class='flex flex-wrap mb-2'>
             <Chip>TypeScript</Chip>
             <Chip>.NET</Chip>
@@ -131,6 +131,222 @@ export default function App() {
             <Chip>Twilio</Chip>
             <Chip>SQL</Chip>
             <Chip>Azure</Chip>
+          </div> */}
+        </section>
+
+        <section id='Skills' class='my-16'>
+          <SectionHeading>Skills</SectionHeading>
+
+          <p class='text-forest-800 text-justify indent-6 mb-4'>
+            I'm always looking to learn a new language or framework and enjoy
+            the process of discovering how different technologies solve problems
+            in their own ways. Here are some of the ones that I am most familiar
+            with and have developed the most projects with.
+          </p>
+
+          <div class='mb-8'>
+            <h2 class='text-2xl font-bold text-forest-800 leading-5 mb-4'>
+              Languages
+            </h2>
+
+            <div class='flex gap-4'>
+              <figure class='flex-1 text-center'>
+                <img
+                  class='m-auto'
+                  src='/images/skills/javascript.webp'
+                  alt='JavaScript Logo'
+                  width='75'
+                  height='75'
+                />
+                <figcaption class='text-forest-500 mt-1'>JavaScript</figcaption>
+              </figure>
+
+              <figure class='flex-1 text-center'>
+                <img
+                  class='m-auto'
+                  src='/images/skills/typescript.webp'
+                  alt='TypeScript Logo'
+                  width='75'
+                  height='75'
+                />
+                <figcaption class='text-forest-500 mt-1'>TypeScript</figcaption>
+              </figure>
+
+              <figure class='flex-1 text-center'>
+                <img
+                  class='m-auto'
+                  src='/images/skills/csharp.webp'
+                  alt='C# Logo'
+                  width='75'
+                  height='75'
+                />
+                <figcaption class='text-forest-500 mt-1'>C#</figcaption>
+              </figure>
+
+              <figure class='flex-1 text-center'>
+                <img
+                  class='m-auto'
+                  src='/images/skills/go.webp'
+                  alt='Go Logo'
+                  width='75'
+                  height='75'
+                />
+                <figcaption class='text-forest-500 mt-1'>Go</figcaption>
+              </figure>
+
+              <figure class='flex-1 text-center'>
+                <img
+                  class='m-auto'
+                  src='/images/skills/python.webp'
+                  alt='Python Logo'
+                  width='75'
+                  height='75'
+                />
+                <figcaption class='text-forest-500 mt-1'>Python</figcaption>
+              </figure>
+{/* 
+              <figure class='flex-1 text-center'>
+                <img
+                  class='m-auto'
+                  src='/images/skills/rust.webp'
+                  alt='Rust Logo'
+                  width='75'
+                  height='75'
+                />
+                <figcaption class='text-forest-500 mt-1'>Rust</figcaption>
+              </figure> */}
+            </div>
+
+            <p class='text-forest-500 mt-1'>Also: Rust, C++, HTML, CSS, SQL</p>
+          </div>
+
+          <div class='mb-8'>
+            <h2 class='text-2xl font-bold text-forest-800 leading-5 mb-4'>
+              Frameworks
+            </h2>
+
+            <div class='flex gap-4'>
+              <figure class='flex-1 text-center'>
+                <img
+                  class='m-auto'
+                  src='/images/skills/solid.webp'
+                  alt='SolidJS Logo'
+                  width='75'
+                  height='75'
+                />
+                <figcaption class='text-forest-500 mt-1'>SolidJS</figcaption>
+              </figure>
+
+              <figure class='flex-1 text-center'>
+                <img
+                  class='m-auto'
+                  src='/images/skills/react.webp'
+                  alt='ReactJS Logo'
+                  width='75'
+                  height='75'
+                />
+                <figcaption class='text-forest-500 mt-1'>ReactJS</figcaption>
+              </figure>
+
+              <figure class='flex-1 text-center'>
+                <img
+                  class='m-auto'
+                  src='/images/skills/dotnet.webp'
+                  alt='.NET Logo'
+                  width='75'
+                  height='75'
+                />
+                <figcaption class='text-forest-500 mt-1'>.NET</figcaption>
+              </figure>
+
+              <figure class='flex-1 text-center'>
+                <img
+                  class='m-auto'
+                  src='/images/skills/azure-functions.webp'
+                  alt='Azure Functions Logo'
+                  width='75'
+                  height='75'
+                />
+                <figcaption class='text-forest-500 mt-1'>
+                  Azure Functions
+                </figcaption>
+              </figure>
+            </div>
+
+            <p class='text-forest-500 mt-1'>Also: Angular, Solid Start, Jest</p>
+          </div>
+
+          <div class='mb-8'>
+            <h2 class='text-2xl font-bold text-forest-800 leading-5 mb-4'>
+              Other
+            </h2>
+
+            <div class='flex gap-4'>
+              <figure class='flex-1 text-center'>
+                <img
+                  class='m-auto'
+                  src='/images/skills/azure.webp'
+                  alt='Azure Logo'
+                  width='75'
+                  height='75'
+                />
+                <figcaption class='text-forest-500 mt-1'>Azure</figcaption>
+              </figure>
+
+              <figure class='flex-1 text-center'>
+                <img
+                  class='m-auto'
+                  src='/images/skills/cloudflare.webp'
+                  alt='Cloudflare Logo'
+                  width='75'
+                  height='75'
+                />
+                <figcaption class='text-forest-500 mt-1'>
+                  Cloudflare (Pages)
+                </figcaption>
+              </figure>
+
+              <figure class='flex-1 text-center'>
+                <img
+                  class='m-auto'
+                  src='/images/skills/postman.webp'
+                  alt='Postman Logo'
+                  width='75'
+                  height='75'
+                />
+                <figcaption class='text-forest-500 mt-1'>Postman</figcaption>
+              </figure>
+
+              <figure class='flex-1 text-center'>
+                <img
+                  class='m-auto'
+                  src='/images/skills/twilio.webp'
+                  alt='Twilio Logo'
+                  width='75'
+                  height='75'
+                />
+                <figcaption class='text-forest-500 mt-1'>
+                  Twilio
+                </figcaption>
+              </figure>
+
+              <figure class='flex-1 text-center'>
+                <img
+                  class='m-auto'
+                  src='/images/skills/git.webp'
+                  alt='Git Logo'
+                  width='75'
+                  height='75'
+                />
+                <figcaption class='text-forest-500 mt-1'>
+                  Git
+                </figcaption>
+              </figure>
+            </div>
+
+            <p class='text-forest-500 mt-1'>
+              Also: GCP, Firebase, GitHub, Azure SQL, Microsoft EntraID
+            </p>
           </div>
         </section>
 
@@ -387,12 +603,58 @@ export default function App() {
           <SectionHeading>Credits</SectionHeading>
 
           <p class='text-sm text-forest-500 text-justify'>
-            This website was built from scratch using Solid Start, SolidJS,
-            Tailwind CSS, and TypeScript in Visual Studio Code. The source code is available on
-            GitHub. The layout is inspired by{' '}
-            <a class='underline text-forest-700' href='https://brittanychiang.com/'>Brittany Chiang's website</a>. Graphics for
-            brands were taken from their respective websites. Other graphics were created with
-            Affinity Designer.
+            This website was built from scratch using{' '}
+            <a
+              class='underline text-forest-700'
+              href='https://start.solidjs.com//'
+            >
+              Solid Start
+            </a>
+            ,{' '}
+            <a class='underline text-forest-700' href='https://solidjs.com/'>
+              SolidJS
+            </a>
+            ,
+            <a
+              class='underline text-forest-700'
+              href='https://tailwindcss.com/'
+            >
+              Tailwind CSS
+            </a>
+            , and{' '}
+            <a
+              class='underline text-forest-700'
+              href='https://www.typescriptlang.org'
+            >
+              TypeScript
+            </a>{' '}
+            in{' '}
+            <a
+              class='underline text-forest-700'
+              href='https://code.visualstudio.com/'
+            >
+              Visual Studio Code
+            </a>
+            . The source code is available on{' '}
+            <a class='underline text-forest-700' href='#'>
+              GitHub
+            </a>
+            . The layout is inspired by{' '}
+            <a
+              class='underline text-forest-700'
+              href='https://brittanychiang.com/'
+            >
+              Brittany Chiang's website
+            </a>
+            . Graphics for brands were taken from their respective websites.
+            Other graphics were created with{' '}
+            <a
+              class='underline text-forest-700'
+              href='https://affinity.serif.com/en-us/designer/'
+            >
+              Affinity Designer
+            </a>
+            .
           </p>
         </section>
       </main>
