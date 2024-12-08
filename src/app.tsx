@@ -11,7 +11,7 @@ export default function App() {
   const [expended, setExpended] = createSignal(false);
 
   return (
-    <div class='grid grid-cols-[400px_minmax(0,1fr)] max-w-[1200px] mx-auto border-x border-forest-600'>
+    <div class='grid grid-cols-[400px_minmax(0,1fr)] max-w-[1200px] mx-auto border-x border-neutral-600'>
       <img
         src='/images/background-pattern.svg'
         alt=''
@@ -19,25 +19,60 @@ export default function App() {
       />
 
       <span></span>
-      <aside class='border-r border-forest-600 p-4 flex flex-col h-dvh fixed w-[400px]'>
-        <section class='flex-none text-center'>
-          <img
+      <aside class='border-r border-neutral-600 p-4 flex flex-col h-dvh fixed w-[400px]'>
+        <section class='flex-none'>
+          {/* <img
             class='inline-block mt-16 mb-6'
             src='/images/wave.webp'
             alt='Wave Emoji'
             width='110'
             height='110'
-          />
+          /> */}
 
-          <h1 class='text-4xl font-black text-forest-700 mb-1'>Jack Stoller</h1>
+          <h1 class='text-4xl font-black mb-1 mt-48'>Jack Stoller</h1>
 
-          <h2 class='text-xl font-black text-forest-500'>
+          <h2 class='text-xl'>
             Developer & Student
           </h2>
         </section>
 
-        <nav class='flex-1 mt-32'>
+        <nav class='flex-1 mt-8'>
           <ul>
+            {/* <li>
+              <a href='#About_Me'>
+                1. About Me
+              </a>
+            </li>
+            <li>
+              <a href='#About_Me'>
+                2. Work
+              </a>
+            </li>
+            <li>
+              <a href='#About_Me'>
+                3. Skills
+              </a>
+            </li>
+            <li>
+              <a href='#About_Me'>
+                4. Education
+              </a>
+            </li>
+            <li>
+              <a href='#About_Me'>
+                5. Projects
+              </a>
+            </li>
+            <li>
+              <a href='#About_Me'>
+                6. Contacts
+              </a>
+            </li>
+            <li>
+              <a href='#About_Me'>
+                7. Credits
+              </a>
+            </li> */}
             <NavItem to='#About_Me' active={true}>
               About Me
             </NavItem>
@@ -49,7 +84,7 @@ export default function App() {
           </ul>
         </nav>
 
-        <footer class='flex-none flex justify-between text-forest-500 text-sm p-2'>
+        <footer class='flex-none flex justify-between text-neutral-500 text-sm p-2'>
           <p>© {new Date().getFullYear()} Jack Stoller</p>
           <p>Published 2024-11-30</p>
         </footer>
@@ -625,7 +660,7 @@ export default function App() {
                   Email
                   <input
                     type='email'
-                    class='w-full p-3 text-forest-800 bg-forest-200 rounded border-2 border-forest-500 shadow-hard placeholder:text-forest-400 text-sm focus:outline-none focus:ring-2 focus:ring-forest-700 focus:border-forest-700'
+                    class='w-full p-3 text-neutral-800 border-b-2 border-neutral-500 placeholder:text-neutral-400 text-sm focus:outline-none focus:border-neutral-700 focus:bg-neutral-100'
                     placeholder='jdoe@domain.com'
                     required
                   />
@@ -633,7 +668,7 @@ export default function App() {
                 <label class='text-forest-800'>
                   Message
                   <textarea
-                    class='w-full p-3 text-forest-800 bg-forest-200 rounded border-2 border-forest-500 shadow-hard placeholder:text-forest-400 text-sm focus:outline-none focus:ring-2 focus:ring-forest-700 focus:border-forest-700'
+                    class='w-full p-3 text-neutral-800 border-b-2 border-neutral-500 placeholder:text-neutral-400 text-sm focus:outline-none focus:border-neutral-700 focus:bg-neutral-100'
                     placeholder='Your message here...'
                     rows={4}
                     required
@@ -648,7 +683,7 @@ export default function App() {
         <section id='Credits' class='my-16'>
           <SectionHeading>Credits</SectionHeading>
 
-          <p class='text-sm text-forest-500 text-justify'>
+          <p class='text-sm text-neutral-500 text-justify'>
             This website was built from scratch using{' '}
             <a
               class='underline text-forest-700'
