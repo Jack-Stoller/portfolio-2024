@@ -1,16 +1,14 @@
-import { createSignal } from 'solid-js';
 import { ImageCarouselClientComponent } from './components/display/ImageCarousel';
 import { NavItem } from './components/display/NavItem';
 import { SectionHeading } from './components/display/SectionHeading';
+import { A } from './components/input/A';
 import { Button } from './components/input/Button';
 import { Chip } from './components/input/Chip';
-
-import './index.css';
 import { Field } from './components/input/Field';
 
-export default function App() {
-  const [expended, setExpended] = createSignal(false);
+import './index.css';
 
+export default function App() {
   return (
     <div class='grid grid-cols-[400px_minmax(0,1fr)] max-w-[1200px] mx-auto border-x border-neutral-600'>
       <span></span>
@@ -476,9 +474,9 @@ export default function App() {
                   Websockets are used to provide real-time updates to the
                   interface as changes are made. The code for this project is
                   available on{' '}
-                  <a class='underline text-forest-700' href='#'>
+                  <A to='#'>
                     GitHub
-                  </a>
+                  </A>
                   .
                 </p>
                 <img
@@ -516,8 +514,8 @@ export default function App() {
                 U.S. government regulation on data security, encryption and user
                 privacy. It was originally created as a capstone project in one
                 of my undergraduate courses.  The code for this project is
-                available on <a class='underline text-forest-700' href='#'>GitHub</a>.
-                A live version of the report can be viewed <a class='underline text-forest-700' href='#'>here</a>.
+                available on <A to='#'>GitHub</A>.
+                A live version of the report can be viewed <A to='#'>here</A>.
               </p>
             </div>
 
@@ -545,20 +543,15 @@ export default function App() {
                 I'm always looking for new opportunities and challenges. If you
                 have a project you'd like to discuss, or just want to say hi,
                 feel free to get in touch. Use the form, or send me an email at{' '}
-                <a
-                  class='underline text-forest-700'
-                  href='mailto:me@jackstoller.com'
-                >
+                <A to='mailto:me@jackstoller.com'>
                   me@jackstoller.com
-                </a>{' '}
+                </A>{' '}
                 directly.
               </p>
 
               <div class='flex gap-4 mt-8 opacity-50'>
-                <a
-                  href='https://www.linkedin.com/in/jack-stoller/'
-                  target='_blank'
-                  rel='noopener'
+                <A
+                  to='https://www.linkedin.com/in/jack-stoller/'
                 >
                   <img
                     src='/images/socials/linkedin.webp'
@@ -566,12 +559,10 @@ export default function App() {
                     width='32'
                     height='32'
                   />
-                </a>
+                </A>
 
-                <a
-                  href='https://github.com/Jack-Stoller/'
-                  target='_blank'
-                  rel='noopener'
+                <A
+                  to='https://github.com/Jack-Stoller/'
                 >
                   <img
                     src='/images/socials/github.svg'
@@ -579,12 +570,10 @@ export default function App() {
                     width='32'
                     height='32'
                   />
-                </a>
+                </A>
 
-                <a
-                  href='https://www.instagram.com/jack.stoller.23/'
-                  target='_blank'
-                  rel='noopener'
+                <A
+                  to='https://www.instagram.com/jack.stoller.23/'
                 >
                   <img
                     src='/images/socials/instagram.svg'
@@ -592,7 +581,7 @@ export default function App() {
                     width='32'
                     height='32'
                   />
-                </a>
+                </A>
               </div>
             </div>
 
@@ -625,56 +614,38 @@ export default function App() {
 
           <p class='text-sm text-neutral-500 text-justify'>
             This website was built from scratch using{' '}
-            <a
-              class='underline text-forest-700'
-              href='https://start.solidjs.com//'
-            >
+            <A to='https://start.solidjs.com/'>
               Solid Start
-            </a>
+            </A>
             ,{' '}
-            <a class='underline text-forest-700' href='https://solidjs.com/'>
+            <A to='https://solidjs.com/'>
               SolidJS
-            </a>
+            </A>
             ,{' '}
-            <a
-              class='underline text-forest-700'
-              href='https://tailwindcss.com/'
-            >
+            <A to='https://tailwindcss.com/'>
               Tailwind CSS
-            </a>
+            </A>
             , and{' '}
-            <a
-              class='underline text-forest-700'
-              href='https://www.typescriptlang.org'
-            >
+            <A to='https://www.typescriptlang.org'>
               TypeScript
-            </a>{' '}
+            </A>{' '}
             in{' '}
-            <a
-              class='underline text-forest-700'
-              href='https://code.visualstudio.com/'
-            >
+            <A to='https://code.visualstudio.com/'>
               Visual Studio Code
-            </a>
+            </A>
             . The source code is available on{' '}
-            <a class='underline text-forest-700' href='#'>
+            <A to='#'>
               GitHub
-            </a>
+            </A>
             . The layout is inspired by{' '}
-            <a
-              class='underline text-forest-700'
-              href='https://brittanychiang.com/'
-            >
+            <A to='https://brittanychiang.com/'>
               Brittany Chiang's website
-            </a>
+            </A>
             . Graphics for brands were taken from their respective websites.
             Other graphics were created with{' '}
-            <a
-              class='underline text-forest-700'
-              href='https://affinity.serif.com/en-us/designer/'
-            >
+            <A to='https://affinity.serif.com/en-us/designer/'>
               Affinity Designer
-            </a>
+            </A>
             .
           </p>
         </section>
