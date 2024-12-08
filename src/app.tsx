@@ -1,10 +1,4 @@
-import { ImageCarouselClientComponent } from './components/display/ImageCarousel';
 import { NavItem } from './components/display/NavItem';
-import { SectionHeading } from './components/display/SectionHeading';
-import { A } from './components/input/A';
-import { Button } from './components/input/Button';
-import { Chip } from './components/input/Chip';
-import { Field } from './components/input/Field';
 import { AboutMeSection } from './components/sections/AboutMeSection';
 import { ContactSection } from './components/sections/ContactSection';
 import { CreditsSection } from './components/sections/CreditsSection';

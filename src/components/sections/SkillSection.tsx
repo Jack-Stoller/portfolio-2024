@@ -1,5 +1,6 @@
 import { P } from '../display/P';
 import { Section } from '../display/Section';
+import { Skill } from '../display/Skill';
 
 export const SkillsSection = () => {
   return (
@@ -17,60 +18,26 @@ export const SkillsSection = () => {
         </h2>
 
         <div class='flex gap-4'>
-          <figure class='flex-1 text-center'>
-            <img
-              class='m-auto opacity-75'
-              src='/images/skills/javascript.svg'
-              alt='JavaScript Logo'
-              width='75'
-              height='75'
-            />
-            <figcaption class='text-forest-500 mt-1'>JavaScript</figcaption>
-          </figure>
-
-          <figure class='flex-1 text-center'>
-            <img
-              class='m-auto opacity-75'
-              src='/images/skills/typescript.svg'
-              alt='TypeScript Logo'
-              width='75'
-              height='75'
-            />
-            <figcaption class='text-forest-500 mt-1'>TypeScript</figcaption>
-          </figure>
-
-          <figure class='flex-1 text-center'>
-            <img
-              class='m-auto opacity-75'
-              src='/images/skills/csharp.svg'
-              alt='C# Logo'
-              width='75'
-              height='75'
-            />
-            <figcaption class='text-forest-500 mt-1'>C#</figcaption>
-          </figure>
-
-          <figure class='flex-1 text-center'>
-            <img
-              class='m-auto opacity-75'
-              src='/images/skills/go.svg'
-              alt='Go Logo'
-              width='75'
-              height='75'
-            />
-            <figcaption class='text-forest-500 mt-1'>Go</figcaption>
-          </figure>
-
-          <figure class='flex-1 text-center'>
-            <img
-              class='m-auto opacity-75'
-              src='/images/skills/python.svg'
-              alt='Python Logo'
-              width='75'
-              height='75'
-            />
-            <figcaption class='text-forest-500 mt-1'>Python</figcaption>
-          </figure>
+          <Skill
+            label='JavaScript'
+            src='/images/skills/javascript.svg'
+          />
+          <Skill
+            label='TypeScript'
+            src='/images/skills/typescript.svg'
+          />
+          <Skill
+            label='C#'
+            src='/images/skills/csharp.svg'
+          />
+          <Skill
+            label='Go'
+            src='/images/skills/go.svg'
+          />
+          <Skill
+            label='Python'
+            src='/images/skills/python.svg'
+          />
         </div>
 
         <p class='text-forest-500 mt-1'>Also: Rust, C++, HTML, CSS, SQL</p>
@@ -82,51 +49,26 @@ export const SkillsSection = () => {
         </h2>
 
         <div class='flex gap-4'>
-          <figure class='flex-1 text-center'>
-            <img
-              class='m-auto'
-              src='/images/skills/solid.svg'
-              alt='SolidJS Logo'
-              width='75'
-              height='75'
-            />
-            <figcaption class='text-forest-500 mt-1'>SolidJS</figcaption>
-          </figure>
+          <Skill
+            label='SolidJS'
+            src='/images/skills/solid.svg'
+            iconClass='opacity-100'
+          />
 
-          <figure class='flex-1 text-center'>
-            <img
-              class='m-auto opacity-75'
-              src='/images/skills/react.svg'
-              alt='ReactJS Logo'
-              width='75'
-              height='75'
-            />
-            <figcaption class='text-forest-500 mt-1'>ReactJS</figcaption>
-          </figure>
+          <Skill
+            label='ReactJS'
+            src='/images/skills/react.svg'
+          />
 
-          <figure class='flex-1 text-center'>
-            <img
-              class='m-auto opacity-75'
-              src='/images/skills/dotnet.svg'
-              alt='.NET Logo'
-              width='75'
-              height='75'
-            />
-            <figcaption class='text-forest-500 mt-1'>.NET</figcaption>
-          </figure>
+          <Skill
+            label='.NET'
+            src='/images/skills/dotnet.svg'
+          />
 
-          <figure class='flex-1 text-center'>
-            <img
-              class='m-auto opacity-75'
-              src='/images/skills/azure-functions.svg'
-              alt='Azure Functions Logo'
-              width='75'
-              height='75'
-            />
-            <figcaption class='text-forest-500 mt-1'>
-              Azure Functions
-            </figcaption>
-          </figure>
+          <Skill
+            label='Azure Functions'
+            src='/images/skills/azure-functions.svg'
+          />
         </div>
 
         <p class='text-forest-500 mt-1'>Also: Angular, Solid Start, Jest</p>
@@ -136,62 +78,31 @@ export const SkillsSection = () => {
         <h2 class='text-2xl font-bold text-forest-800 leading-5 mb-4'>Other</h2>
 
         <div class='flex gap-4'>
-          <figure class='flex-1 text-center'>
-            <img
-              class='m-auto'
-              src='/images/skills/azure.svg'
-              alt='Azure Logo'
-              width='75'
-              height='75'
-            />
-            <figcaption class='text-forest-500 mt-1'>Azure</figcaption>
-          </figure>
+          <Skill
+            label='Azure'
+            src='/images/skills/azure.svg'
+            iconClass='opacity-100'
+          />
 
-          <figure class='flex-1 text-center'>
-            <img
-              class='m-auto opacity-75'
-              src='/images/skills/cloudflare.svg'
-              alt='Cloudflare Logo'
-              width='75'
-              height='75'
-            />
-            <figcaption class='text-forest-500 mt-1'>
-              Cloudflare (Pages)
-            </figcaption>
-          </figure>
+          <Skill
+            label='Cloudflare (Pages)'
+            src='/images/skills/cloudflare.svg'
+          />
 
-          <figure class='flex-1 text-center'>
-            <img
-              class='m-auto opacity-75'
-              src='/images/skills/postman.svg'
-              alt='Postman Logo'
-              width='75'
-              height='75'
-            />
-            <figcaption class='text-forest-500 mt-1'>Postman</figcaption>
-          </figure>
+          <Skill
+            label='Postman'
+            src='/images/skills/postman.svg'
+          />
 
-          <figure class='flex-1 text-center'>
-            <img
-              class='m-auto opacity-75'
-              src='/images/skills/twilio.svg'
-              alt='Twilio Logo'
-              width='75'
-              height='75'
-            />
-            <figcaption class='text-forest-500 mt-1'>Twilio</figcaption>
-          </figure>
+          <Skill
+            label='Twilio'
+            src='/images/skills/twilio.svg'
+          />
 
-          <figure class='flex-1 text-center'>
-            <img
-              class='m-auto opacity-75'
-              src='/images/skills/git.svg'
-              alt='Git Logo'
-              width='75'
-              height='75'
-            />
-            <figcaption class='text-forest-500 mt-1'>Git</figcaption>
-          </figure>
+          <Skill
+            label='Git'
+            src='/images/skills/git.svg'
+          />
         </div>
 
         <p class='text-forest-500 mt-1'>
