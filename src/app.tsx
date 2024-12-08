@@ -6,6 +6,7 @@ import { Button } from './components/input/Button';
 import { Chip } from './components/input/Chip';
 
 import './index.css';
+import { Field } from './components/input/Field';
 
 export default function App() {
   const [expended, setExpended] = createSignal(false);
@@ -597,24 +598,22 @@ export default function App() {
 
             <div class='flex-1'>
               <form class='flex flex-col gap-4'>
-                <label class='text-forest-800'>
-                  Email
-                  <input
-                    type='email'
-                    class='w-full p-3 text-neutral-800 border-b-2 border-neutral-500 placeholder:text-neutral-400 text-sm focus:outline-none focus:border-neutral-700 focus:bg-neutral-100'
-                    placeholder='jdoe@domain.com'
-                    required
-                  />
-                </label>
-                <label class='text-forest-800'>
-                  Message
-                  <textarea
-                    class='w-full p-3 text-neutral-800 border-b-2 border-neutral-500 placeholder:text-neutral-400 text-sm focus:outline-none focus:border-neutral-700 focus:bg-neutral-100'
-                    placeholder='Your message here...'
-                    rows={4}
-                    required
-                  ></textarea>
-                </label>
+                <Field
+                  label='Email'
+                  name='email'
+                  placeholder='jdoe@example.com'
+                  type='email'
+                  required
+                />
+                <Field
+                  label='Message'
+                  name='message'
+                  placeholder='Your message here...'
+                  type='textarea'
+                  rows={3}
+                  required
+                />
+
                 <Button class='w-full m-0'>Send</Button>
               </form>
             </div>
