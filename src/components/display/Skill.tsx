@@ -9,15 +9,15 @@ interface SkillProps {
 
 export const Skill: Component<SkillProps> = (props) => {
   return (
-    <figure class='flex-1 text-center'>
+    <figure class='flex-none w-16 m-auto text-center'>
       <img
         class={css('m-auto opacity-75', props.iconClass)}
         src={props.src}
         alt={`${props.label} Logo`}
-        width='75'
-        height='75'
+        width='64'
+        height='64'
       />
-      <figcaption class='text-forest-500 mt-1'>{props.label}</figcaption>
+      <figcaption class='text-neutral-500 mt-1'>{props.label}</figcaption>
     </figure>
   );
 };

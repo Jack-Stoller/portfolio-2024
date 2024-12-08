@@ -13,11 +13,11 @@ export const SkillsSection = () => {
       </P>
 
       <div class='mb-8'>
-        <h2 class='text-2xl font-bold text-forest-800 leading-5 mb-4'>
+        <h2 class='text-2xl font-bold text-neutral-800 leading-5 mb-4'>
           Languages
         </h2>
 
-        <div class='flex gap-4'>
+        <div class='flex gap-4 flex-wrap justify-between'>
           <Skill
             label='JavaScript'
             src='/images/skills/javascript.svg'
@@ -40,15 +40,15 @@ export const SkillsSection = () => {
           />
         </div>
 
-        <p class='text-forest-500 mt-1'>Also: Rust, C++, HTML, CSS, SQL</p>
+        <p class='text-neutral-500 mt-1'>Also: Rust, C++, HTML, CSS, SQL</p>
       </div>
 
       <div class='mb-8'>
-        <h2 class='text-2xl font-bold text-forest-800 leading-5 mb-4'>
+        <h2 class='text-2xl font-bold text-neutral-800 leading-5 mb-4'>
           Frameworks
         </h2>
 
-        <div class='flex gap-4'>
+        <div class='flex gap-4 flex-wrap justify-between'>
           <Skill
             label='SolidJS'
             src='/images/skills/solid.svg'
@@ -71,13 +71,13 @@ export const SkillsSection = () => {
           />
         </div>
 
-        <p class='text-forest-500 mt-1'>Also: Angular, Solid Start, Jest</p>
+        <p class='text-neutral-500 mt-1'>Also: Angular, Solid Start, Jest</p>
       </div>
 
       <div class='mb-8'>
-        <h2 class='text-2xl font-bold text-forest-800 leading-5 mb-4'>Other</h2>
+        <h2 class='text-2xl font-bold text-neutral-800 leading-5 mb-4'>Other</h2>
 
-        <div class='flex gap-4'>
+        <div class='flex gap-4 flex-wrap justify-between'>
           <Skill
             label='Azure'
             src='/images/skills/azure.svg'
@@ -105,7 +105,7 @@ export const SkillsSection = () => {
           />
         </div>
 
-        <p class='text-forest-500 mt-1'>
+        <p class='text-neutral-500 mt-1'>
           Also: GCP, Firebase, GitHub, Azure SQL, Microsoft EntraID
         </p>
       </div>

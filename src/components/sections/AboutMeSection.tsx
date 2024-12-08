@@ -4,7 +4,7 @@ import { Section } from '../display/Section';
 export const AboutMeSection = () => {
   return (
     <Section title='About Me' id='about-me'>
-      <div class='flex gap-12 align-middle'>
+      <div class='flex flex-col sm:flex-row gap-12 align-middle'>
         <P>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor <strong>incididunt ut</strong> labore et dolore magna

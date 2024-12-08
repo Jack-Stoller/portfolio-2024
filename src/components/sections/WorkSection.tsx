@@ -3,7 +3,7 @@ import { Section } from '../display/Section';
 export const WorkSection = () => {
   return (
     <Section title='Work' id='work'>
-      <div class='flex gap-12 align-middle'>
+      <div class='flex flex-col sm:flex-row gap-4 sm:gap-12 align-middle'>
         <div class='flex-none w-[298px]'>
           <img
             src='/images/pcs.svg'

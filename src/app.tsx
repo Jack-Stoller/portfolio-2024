@@ -15,15 +15,15 @@ import './index.css';
 export default function App() {
   return (
     <SectionObserver>
-      <div class='grid grid-cols-[400px_minmax(0,1fr)] max-w-[1200px] mx-auto border-x border-neutral-600'>
+      <div class='grid lg:grid-cols-[24rem_minmax(0,1fr)] max-w-[1280px] mx-auto xl:border-x border-neutral-600'>
         <span></span>
-        <aside class='border-r border-neutral-600 p-4 flex flex-col h-dvh fixed w-[400px]'>
+        <aside class='border-b lg:border-b-0 lg:border-r border-neutral-600 py-4 px-16 lg:p-4 flex gap-16 justify-between lg:flex-col lg:fixed lg:h-dvh w-full lg:w-96'>
           <Header class='flex-none' />
-          <Nav class='flex-1 mt-16' />
-          <Footer class='flex-none' />
+          <Nav class='lg:flex-1' />
+          <Footer class='flex-none hidden lg:flex' />
         </aside>
 
-        <main class='px-12 pt-[16rem]'>
+        <main class='px-12 lg:pt-[16rem] max-w-vw'>
           <AboutMeSection />
           <WorkSection />
           <SkillsSection />
@@ -32,6 +32,8 @@ export default function App() {
           <ContactSection />
           <CreditsSection />
         </main>
+
+        <Footer class='lg:hidden border-t border-neutral-600 p-8' />
       </div>
     </SectionObserver>
   );

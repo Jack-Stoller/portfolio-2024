@@ -1,4 +1,5 @@
 import { Section } from '../display/Section';
+import { Socials } from '../display/Socials';
 import { A } from '../input/A';
 import { Button } from '../input/Button';
 import { Field } from '../input/Field';
@@ -6,7 +7,7 @@ import { Field } from '../input/Field';
 export const ContactSection = () => {
   return (
     <Section title='Contact' id='contact'>
-      <div class='flex gap-12 align-middle'>
+      <div class='flex flex-col sm:flex-row gap-12 align-middle'>
         <div class='flex-1'>
           <h2 class='text-2xl font-bold text-forest-800 mb-2'>Get in Touch</h2>
 
@@ -17,34 +18,7 @@ export const ContactSection = () => {
             <A to='mailto:me@jackstoller.com'>me@jackstoller.com</A> directly.
           </p>
 
-          <div class='flex gap-4 mt-8 opacity-50'>
-            <A to='https://www.linkedin.com/in/jack-stoller/'>
-              <img
-                src='/images/socials/linkedin.webp'
-                alt='LinkedIn Logo'
-                width='32'
-                height='32'
-              />
-            </A>
-
-            <A to='https://github.com/Jack-Stoller/'>
-              <img
-                src='/images/socials/github.svg'
-                alt='Github Logo'
-                width='32'
-                height='32'
-              />
-            </A>
-
-            <A to='https://www.instagram.com/jack.stoller.23/'>
-              <img
-                src='/images/socials/instagram.svg'
-                alt='Instagram Logo'
-                width='32'
-                height='32'
-              />
-            </A>
-          </div>
+          <Socials class='hidden sm:flex mt-8' />
         </div>
 
         <div class='flex-1'>
@@ -68,6 +42,8 @@ export const ContactSection = () => {
             <Button class='w-full m-0'>Send</Button>
           </form>
         </div>
+
+        <Socials class='flex sm:hidden' />
       </div>
     </Section>
   );

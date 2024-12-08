@@ -46,13 +46,13 @@ export const ProjectsSection = () => {
           'Grafana',
         ]}
       >
-        <div class='flex gap-4'>
+        <div class='flex gap-8'>
           <img
             src='/images/projects/clickhouse-logo.svg'
             alt='ClickHouse Data Analysis'
             width='180'
             height='156'
-            class='flex-none m-8 opacity-75'
+            class='hidden sm:block flex-none m-8 opacity-75'
           />
           <P>
             This project initially started as a traditional Postgres database,
@@ -95,7 +95,7 @@ export const ProjectsSection = () => {
             alt='ClickHouse Data Analysis'
             width='180'
             height='150'
-            class='flex-none mx-8'
+            class='hidden sm:block flex-none mx-8'
           />
         </div>
 
