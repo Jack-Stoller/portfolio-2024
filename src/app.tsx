@@ -42,6 +42,7 @@ export default function App() {
               About Me
             </NavItem>
             <NavItem to='#Work'>Work</NavItem>
+            <NavItem to='#Skills'>Skills</NavItem>
             <NavItem to='#Education'>Education</NavItem>
             <NavItem to='#Projects'>Projects</NavItem>
             <NavItem to='#Contact'>Contact</NavItem>
@@ -204,7 +205,7 @@ export default function App() {
                 />
                 <figcaption class='text-forest-500 mt-1'>Python</figcaption>
               </figure>
-{/* 
+              {/* 
               <figure class='flex-1 text-center'>
                 <img
                   class='m-auto'
@@ -325,9 +326,7 @@ export default function App() {
                   width='75'
                   height='75'
                 />
-                <figcaption class='text-forest-500 mt-1'>
-                  Twilio
-                </figcaption>
+                <figcaption class='text-forest-500 mt-1'>Twilio</figcaption>
               </figure>
 
               <figure class='flex-1 text-center'>
@@ -338,9 +337,7 @@ export default function App() {
                   width='75'
                   height='75'
                 />
-                <figcaption class='text-forest-500 mt-1'>
-                  Git
-                </figcaption>
+                <figcaption class='text-forest-500 mt-1'>Git</figcaption>
               </figure>
             </div>
 
@@ -434,7 +431,7 @@ export default function App() {
           <div class='mb-16'>
             <div class='flex gap-4 mb-4'>
               <h2 class='flex-1 text-2xl font-bold text-forest-800'>
-                Clickhouse Data Analysis
+                ClickHouse Data Analysis
               </h2>
               <h4 class='flex-none w-36 text-forest-500 text-end'>
                 February 2024
@@ -445,7 +442,7 @@ export default function App() {
               <div class='flex flex-wrap mb-2'>
                 <Chip>Go</Chip>
                 <Chip>Postgres</Chip>
-                <Chip>Clickhouse</Chip>
+                <Chip>ClickHouse</Chip>
                 <Chip>Oracle Cloud</Chip>
                 <Chip>goroutines</Chip>
                 <Chip>Grafana</Chip>
@@ -453,21 +450,21 @@ export default function App() {
               <div class='flex gap-4'>
                 <img
                   src='/images/projects/clickhouse-logo.svg'
-                  alt='Clickhouse Data Analysis'
+                  alt='ClickHouse Data Analysis'
                   width='180'
                   height='156'
-                  class='flex-none m-8'
+                  class='flex-none m-8 opacity-75'
                 />
                 <p class='text-forest-800 leading-5 indent-6 text-justify'>
                   This project initially started as a traditional Postgres
                   database, but moved to Clickup to leverage it's column based
                   database solution to store and analyze billions of records.
                   The records were pull from a public API using a Go worker and
-                  then inserted into Clickhouse in batches. The worker was
+                  then inserted into ClickHouse in batches. The worker was
                   designed to be able to scale both vertically and horizontally.
                   It featured multi phase data deduplication and batched
                   database updates. The data was then analyzed with optimized
-                  Clickhouse queries and visualized using Grafana. The project
+                  ClickHouse queries and visualized using Grafana. The project
                   was hosted on Oracle Cloud.
                 </p>
               </div>
@@ -505,7 +502,7 @@ export default function App() {
                 </p>
                 <img
                   src='/images/projects/swimxo-logo.svg'
-                  alt='Clickhouse Data Analysis'
+                  alt='ClickHouse Data Analysis'
                   width='180'
                   height='150'
                   class='flex-none m-8'
@@ -563,38 +560,87 @@ export default function App() {
           <SectionHeading>Contact</SectionHeading>
 
           <div class='flex gap-12 align-middle'>
-            <img
-              src='/images/ua.webp'
-              alt='University of Akron Logo'
-              width='100'
-              height='164'
-              class='flex-none self-center'
-            />
-
             <div class='flex-1'>
-              <h5 class='text-lg text-forest-500 float-right'>
-                2023-{Math.min(2026, new Date().getFullYear())}
-              </h5>
-
               <h2 class='text-2xl font-bold text-forest-800 mb-2'>
-                University of Akron
+                Get in Touch
               </h2>
 
-              <h3 class='text-lg font-bold text-forest-500 leading-5 mb-2 max-w-80'>
-                Bachelor of Science in Computer Information Systems,
-                Cybersecurity
-              </h3>
-
-              <h4 class='font-bold text-forest-500 leading-5'>
-                Minor in Computer Science
-              </h4>
-              <h4 class='font-bold text-forest-500 leading-5 mb-2'>
-                Minor in Business Administration
-              </h4>
-
-              <p class='text-forest-800 text-sm'>
-                Expected graduation in June 2026.
+              <p class='text-forest-800 text-justify indent-6'>
+                I'm always looking for new opportunities and challenges. If you
+                have a project you'd like to discuss, or just want to say hi,
+                feel free to get in touch. Use the form, or send me an email at{' '}
+                <a
+                  class='underline text-forest-700'
+                  href='mailto:me@jackstoller.com'
+                >
+                  me@jackstoller.com
+                </a> directly.
               </p>
+
+              <div class='flex gap-4 mt-8 opacity-50'>
+                <a
+                  href='https://www.linkedin.com/in/jack-stoller/'
+                  target='_blank'
+                  rel='noopener'
+                >
+                  <img
+                    src='/images/socials/linkedin.webp'
+                    alt='LinkedIn Logo'
+                    width='32'
+                    height='32'
+                  />
+                </a>
+                
+                <a
+                  href='https://github.com/Jack-Stoller/'
+                  target='_blank'
+                  rel='noopener'
+                >
+                  <img
+                    src='/images/socials/github.svg'
+                    alt='Github Logo'
+                    width='32'
+                    height='32'
+                  />
+                </a>
+                
+                <a
+                  href='https://www.instagram.com/jack.stoller.23/'
+                  target='_blank'
+                  rel='noopener'
+                >
+                  <img
+                    src='/images/socials/instagram.svg'
+                    alt='Instagram Logo'
+                    width='32'
+                    height='32'
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div class='flex-1'>
+              <form class='flex flex-col gap-4'>
+                <label class='text-forest-800'>
+                  Email
+                  <input
+                    type='email'
+                    class='w-full p-3 text-forest-800 bg-forest-200 rounded border-2 border-forest-500 shadow-hard placeholder:text-forest-400 text-sm focus:outline-none focus:ring-2 focus:ring-forest-700 focus:border-forest-700'
+                    placeholder='jdoe@domain.com'
+                    required
+                  />
+                </label>
+                <label class='text-forest-800'>
+                  Message
+                  <textarea
+                    class='w-full p-3 text-forest-800 bg-forest-200 rounded border-2 border-forest-500 shadow-hard placeholder:text-forest-400 text-sm focus:outline-none focus:ring-2 focus:ring-forest-700 focus:border-forest-700'
+                    placeholder='Your message here...'
+                    rows={4}
+                    required
+                    ></textarea>
+                </label>
+                <Button class='w-full m-0'>Send</Button>
+              </form>
             </div>
           </div>
         </section>
