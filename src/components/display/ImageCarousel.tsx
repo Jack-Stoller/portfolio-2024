@@ -17,7 +17,7 @@ const ImageCarousel: Component<ImageCarouselProps> = (props) => {
   onMount(async () => {
     // Initialize Flickity when the component mounts
     // This will run on the client
-    const Flickity = (await import('flickity')).default; // Dynamically import Flickity
+    const Flickity = (await import('flickity')).default; // Dynamically import Flickity to avoid SSR issues
     new Flickity(carouselRef!, {
       cellAlign: 'center',
       contain: true,
