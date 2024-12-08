@@ -12,67 +12,24 @@ export default function App() {
 
   return (
     <div class='grid grid-cols-[400px_minmax(0,1fr)] max-w-[1200px] mx-auto border-x border-neutral-600'>
-      <img
-        src='/images/background-pattern.svg'
-        alt=''
-        class='fixed inset-0 w-full h-full opacity-5 pointer-events-none'
-      />
-
       <span></span>
       <aside class='border-r border-neutral-600 p-4 flex flex-col h-dvh fixed w-[400px]'>
-        <section class='flex-none'>
-          {/* <img
+        <section class='flex-none text-center'>
+          <img
             class='inline-block mt-16 mb-6'
             src='/images/wave.webp'
             alt='Wave Emoji'
             width='110'
             height='110'
-          /> */}
+          />
 
-          <h1 class='text-4xl font-black mb-1 mt-48'>Jack Stoller</h1>
+          <h1 class='text-4xl font-black mb-1 mt-8'>Jack Stoller</h1>
 
-          <h2 class='text-xl'>
-            Developer & Student
-          </h2>
+          <h2 class='text-xl'>Developer & Student</h2>
         </section>
 
-        <nav class='flex-1 mt-8'>
+        <nav class='flex-1 mt-16'>
           <ul>
-            {/* <li>
-              <a href='#About_Me'>
-                1. About Me
-              </a>
-            </li>
-            <li>
-              <a href='#About_Me'>
-                2. Work
-              </a>
-            </li>
-            <li>
-              <a href='#About_Me'>
-                3. Skills
-              </a>
-            </li>
-            <li>
-              <a href='#About_Me'>
-                4. Education
-              </a>
-            </li>
-            <li>
-              <a href='#About_Me'>
-                5. Projects
-              </a>
-            </li>
-            <li>
-              <a href='#About_Me'>
-                6. Contacts
-              </a>
-            </li>
-            <li>
-              <a href='#About_Me'>
-                7. Credits
-              </a>
-            </li> */}
             <NavItem to='#About_Me' active={true}>
               About Me
             </NavItem>
@@ -119,16 +76,16 @@ export default function App() {
           <SectionHeading>Work</SectionHeading>
 
           <div class='flex gap-12 align-middle'>
-            <div class='flex-none w-[256px]'>
+            <div class='flex-none w-[298px]'>
               <img
-                src='/images/pcs.webp'
+                src='/images/pcs.svg'
                 alt='Palitto Consulting Logo'
-                width='256'
-                height='68'
+                width='298'
+                height='97'
                 class='mb-4 mt-4'
               />
 
-              <h2 class='text-2xl font-bold text-forest-800 leading-5 mb-2'>
+              <h2 class='text-2xl font-bold text-neutral-800 leading-5 mb-2'>
                 Palitto Consulting Services
               </h2>
 
@@ -136,9 +93,9 @@ export default function App() {
                 Software Engineer
               </h3>
 
-              <p class='text-forest-500'>Part-time, Feb 2021 to Present</p>
+              <p class='text-neutral-500'>Part-time, Feb 2021 to Present</p>
             </div>
-            <ul class='flex-1 text-forest-800 list-disc leading-5'>
+            <ul class='flex-1 text-neutral-800 list-disc leading-5'>
               <li class='my-2'>
                 Design and develop numerous business grade applications,
                 integrations and solutions for small and medium sized companies
@@ -189,7 +146,7 @@ export default function App() {
               <figure class='flex-1 text-center'>
                 <img
                   class='m-auto'
-                  src='/images/skills/javascript.webp'
+                  src='/images/skills/javascript.svg'
                   alt='JavaScript Logo'
                   width='75'
                   height='75'
@@ -200,7 +157,7 @@ export default function App() {
               <figure class='flex-1 text-center'>
                 <img
                   class='m-auto'
-                  src='/images/skills/typescript.webp'
+                  src='/images/skills/typescript.svg'
                   alt='TypeScript Logo'
                   width='75'
                   height='75'
@@ -211,7 +168,7 @@ export default function App() {
               <figure class='flex-1 text-center'>
                 <img
                   class='m-auto'
-                  src='/images/skills/csharp.webp'
+                  src='/images/skills/csharp.svg'
                   alt='C# Logo'
                   width='75'
                   height='75'
@@ -222,7 +179,7 @@ export default function App() {
               <figure class='flex-1 text-center'>
                 <img
                   class='m-auto'
-                  src='/images/skills/go.webp'
+                  src='/images/skills/go.svg'
                   alt='Go Logo'
                   width='75'
                   height='75'
@@ -233,7 +190,7 @@ export default function App() {
               <figure class='flex-1 text-center'>
                 <img
                   class='m-auto'
-                  src='/images/skills/python.webp'
+                  src='/images/skills/python.svg'
                   alt='Python Logo'
                   width='75'
                   height='75'
@@ -265,7 +222,7 @@ export default function App() {
               <figure class='flex-1 text-center'>
                 <img
                   class='m-auto'
-                  src='/images/skills/solid.webp'
+                  src='/images/skills/solid.svg'
                   alt='SolidJS Logo'
                   width='75'
                   height='75'
@@ -276,7 +233,7 @@ export default function App() {
               <figure class='flex-1 text-center'>
                 <img
                   class='m-auto'
-                  src='/images/skills/react.webp'
+                  src='/images/skills/react.svg'
                   alt='ReactJS Logo'
                   width='75'
                   height='75'
@@ -287,7 +244,7 @@ export default function App() {
               <figure class='flex-1 text-center'>
                 <img
                   class='m-auto'
-                  src='/images/skills/dotnet.webp'
+                  src='/images/skills/dotnet.svg'
                   alt='.NET Logo'
                   width='75'
                   height='75'
@@ -298,7 +255,7 @@ export default function App() {
               <figure class='flex-1 text-center'>
                 <img
                   class='m-auto'
-                  src='/images/skills/azure-functions.webp'
+                  src='/images/skills/azure-functions.svg'
                   alt='Azure Functions Logo'
                   width='75'
                   height='75'
@@ -321,7 +278,7 @@ export default function App() {
               <figure class='flex-1 text-center'>
                 <img
                   class='m-auto'
-                  src='/images/skills/azure.webp'
+                  src='/images/skills/azure.svg'
                   alt='Azure Logo'
                   width='75'
                   height='75'
@@ -332,7 +289,7 @@ export default function App() {
               <figure class='flex-1 text-center'>
                 <img
                   class='m-auto'
-                  src='/images/skills/cloudflare.webp'
+                  src='/images/skills/cloudflare.svg'
                   alt='Cloudflare Logo'
                   width='75'
                   height='75'
@@ -345,7 +302,7 @@ export default function App() {
               <figure class='flex-1 text-center'>
                 <img
                   class='m-auto'
-                  src='/images/skills/postman.webp'
+                  src='/images/skills/postman.svg'
                   alt='Postman Logo'
                   width='75'
                   height='75'
@@ -356,7 +313,7 @@ export default function App() {
               <figure class='flex-1 text-center'>
                 <img
                   class='m-auto'
-                  src='/images/skills/twilio.webp'
+                  src='/images/skills/twilio.svg'
                   alt='Twilio Logo'
                   width='75'
                   height='75'
@@ -367,7 +324,7 @@ export default function App() {
               <figure class='flex-1 text-center'>
                 <img
                   class='m-auto'
-                  src='/images/skills/git.webp'
+                  src='/images/skills/git.svg'
                   alt='Git Logo'
                   width='75'
                   height='75'
@@ -387,19 +344,19 @@ export default function App() {
 
           <div class='flex gap-12 align-middle'>
             <img
-              src='/images/ua.webp'
+              src='/images/ua.svg'
               alt='University of Akron Logo'
-              width='100'
-              height='164'
+              width='212'
+              height='92'
               class='flex-none self-center'
             />
 
             <div class='flex-1'>
-              <h5 class='text-lg text-forest-500 float-right'>
-                2023-{Math.min(2026, new Date().getFullYear())}
+              <h5 class='text-lg text-neutral-500 float-right'>
+                2023-2026
               </h5>
 
-              <h2 class='text-2xl font-bold text-forest-800 mb-2'>
+              <h2 class='text-2xl font-bold text-neutral-800 mb-2'>
                 University of Akron
               </h2>
 
@@ -408,14 +365,14 @@ export default function App() {
                 Cybersecurity
               </h3>
 
-              <h4 class='font-bold text-forest-500 leading-5'>
+              <h4 class='font-bold text-neutral-500 leading-5'>
                 Minor in Computer Science
               </h4>
-              <h4 class='font-bold text-forest-500 leading-5 mb-2'>
+              <h4 class='font-bold text-neutral-500 leading-5 mb-2'>
                 Minor in Business Administration
               </h4>
 
-              <p class='text-forest-800 text-sm'>
+              <p class='text-neutral-800 text-sm'>
                 Expected graduation in June 2026.
               </p>
             </div>
@@ -509,23 +466,17 @@ export default function App() {
           <div class='mb-16'>
             <div class='flex gap-4 mb-4'>
               <h2 class='flex-1 text-2xl font-bold text-forest-800'>SwimXO</h2>
-              <h4 class='flex-none w-36 text-forest-500 text-end'>
+              <h4 class='flex-none w-36 text-neutral-500 text-end'>
                 February 2024
               </h4>
             </div>
 
             <div class='mb-4'>
-              <div class='flex content-end mb-2'>
-                <div class='flex-1 flex flex-wrap'>
-                  <Chip>Firebase</Chip>
-                  <Chip>React</Chip>
-                  <Chip>Websockets</Chip>
-                  <Chip>HTML / CSS / Javascript</Chip>
-                </div>
-
-                <div class='flex-none w-36'>
-                  <Button class='w-full m-0'>View Code</Button>
-                </div>
+              <div class='flex flex-wrap mb-2'>
+                <Chip>Firebase</Chip>
+                <Chip>React</Chip>
+                <Chip>Websockets</Chip>
+                <Chip>HTML / CSS / Javascript</Chip>
               </div>
               <div class='flex gap-4'>
                 <p class='flex-1 text-forest-800 leading-5 indent-6 text-justify'>
@@ -533,7 +484,12 @@ export default function App() {
                   student progress, schedules, courses, and payments. It uses
                   Firebase as a backend for authentication and data storage.
                   Websockets are used to provide real-time updates to the
-                  interface as changes are made.
+                  interface as changes are made. The code for this project is
+                  available on{' '}
+                  <a class='underline text-forest-700' href='#'>
+                    GitHub
+                  </a>
+                  .
                 </p>
                 <img
                   src='/images/projects/swimxo-logo.svg'
@@ -554,30 +510,25 @@ export default function App() {
           </div>
 
           <div>
-            <div class='flex gap-4 mb-4'>
-              <div>
-                <h2 class='text-2xl font-bold text-forest-800 mb-2'>
-                  Encryption Report
-                </h2>
-                <div class='flex flex-wrap mb-2'>
-                  <Chip>Three.js</Chip>
-                  <Chip>Web Components</Chip>
-                  <Chip>HTML / CSS / Javascript</Chip>
-                </div>
-                <p class='text-forest-800 leading-5 indent-6 text-justify'>
-                  An interactive and visual report that examines the evolution
-                  of U.S. government regulation on data security, encryption and
-                  user privacy. It was originally created as a capstone project
-                  in one of my undergraduate courses.
-                </p>
+            <div class='mb-4'>
+              <h2 class='text-2xl font-bold text-forest-800 mb-2'>
+                Encryption Report
+              </h2>
+              <div class='flex flex-wrap mb-2'>
+                <Chip>Three.js</Chip>
+                <Chip>Web Components</Chip>
+                <Chip>HTML</Chip>
+                <Chip>CSS</Chip>
+                <Chip>JavaScript</Chip>
               </div>
-              <div class='flex-none w-36'>
-                <h4 class='text-forest-500 text-end mb-4'>May 2022</h4>
-                <div>
-                  <Button class='w-full'>Visit Project</Button>
-                  <Button class='w-full'>View Code</Button>
-                </div>
-              </div>
+              <p class='text-forest-800 leading-5 indent-6 text-justify'>
+                An interactive and visual report that examines the evolution of
+                U.S. government regulation on data security, encryption and user
+                privacy. It was originally created as a capstone project in one
+                of my undergraduate courses.  The code for this project is
+                available on <a class='underline text-forest-700' href='#'>GitHub</a>.
+                A live version of the report can be viewed <a class='underline text-forest-700' href='#'>here</a>.
+              </p>
             </div>
 
             <ImageCarouselClientComponent
@@ -609,7 +560,8 @@ export default function App() {
                   href='mailto:me@jackstoller.com'
                 >
                   me@jackstoller.com
-                </a> directly.
+                </a>{' '}
+                directly.
               </p>
 
               <div class='flex gap-4 mt-8 opacity-50'>
@@ -625,7 +577,7 @@ export default function App() {
                     height='32'
                   />
                 </a>
-                
+
                 <a
                   href='https://github.com/Jack-Stoller/'
                   target='_blank'
@@ -638,7 +590,7 @@ export default function App() {
                     height='32'
                   />
                 </a>
-                
+
                 <a
                   href='https://www.instagram.com/jack.stoller.23/'
                   target='_blank'
@@ -672,7 +624,7 @@ export default function App() {
                     placeholder='Your message here...'
                     rows={4}
                     required
-                    ></textarea>
+                  ></textarea>
                 </label>
                 <Button class='w-full m-0'>Send</Button>
               </form>
