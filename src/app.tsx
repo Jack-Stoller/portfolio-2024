@@ -23,7 +23,7 @@ export default function App() {
           <Footer class='flex-none hidden lg:flex' />
         </aside>
 
-        <main class='px-12 lg:pt-[16rem] max-w-vw'>
+        <main class='px-6 sm:px-12 lg:pt-[16rem] max-w-vw'>
           <AboutMeSection />
           <WorkSection />
           <SkillsSection />

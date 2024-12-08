@@ -23,7 +23,7 @@ export const WorkSection = () => {
 
           <p class='text-neutral-500'>Part-time, Feb 2021 to Present</p>
         </div>
-        <ul class='flex-1 text-neutral-800 list-disc leading-5'>
+        <ul class='flex-1 text-neutral-800 list-disc leading-5 pl-4'>
           <li class='my-2'>
             Design and develop numerous business grade applications,
             integrations and solutions for small and medium sized companies
