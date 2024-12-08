@@ -1,4 +1,4 @@
-import { NavItem } from './components/display/NavItem';
+import { Nav } from './components/layout/Nav';
 import { AboutMeSection } from './components/sections/AboutMeSection';
 import { ContactSection } from './components/sections/ContactSection';
 import { CreditsSection } from './components/sections/CreditsSection';
@@ -28,18 +28,7 @@ export default function App() {
           <h2 class='text-xl'>Developer & Student</h2>
         </section>
 
-        <nav class='flex-1 mt-16'>
-          <ul>
-            <NavItem to='#About_Me' active={true}>
-              About Me
-            </NavItem>
-            <NavItem to='#Work'>Work</NavItem>
-            <NavItem to='#Skills'>Skills</NavItem>
-            <NavItem to='#Education'>Education</NavItem>
-            <NavItem to='#Projects'>Projects</NavItem>
-            <NavItem to='#Contact'>Contact</NavItem>
-          </ul>
-        </nav>
+        <Nav class='flex-1 mt-16' />
 
         <footer class='flex-none flex justify-between text-neutral-500 text-sm p-2'>
           <p>© {new Date().getFullYear()} Jack Stoller</p>
