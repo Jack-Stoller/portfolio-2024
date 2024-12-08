@@ -7,7 +7,7 @@
 
 @layer base {
   body {
-    @apply h-full;
+    @apply h-full scroll-smooth;
   }
 }
 

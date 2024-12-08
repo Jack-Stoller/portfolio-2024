@@ -82,7 +82,7 @@ export default function App() {
                 alt='Palitto Consulting Logo'
                 width='298'
                 height='97'
-                class='mb-4 mt-4'
+                class='my-4 opacity-75'
               />
 
               <h2 class='text-2xl font-bold text-neutral-800 leading-5 mb-2'>
@@ -127,7 +127,7 @@ export default function App() {
           </div> */}
         </section>
 
-        <section id='Skills' class='my-16'>
+        <section id='Skills' class='my-16  scroll-mt-16'>
           <SectionHeading>Skills</SectionHeading>
 
           <p class='text-forest-800 text-justify indent-6 mb-4'>
@@ -145,7 +145,7 @@ export default function App() {
             <div class='flex gap-4'>
               <figure class='flex-1 text-center'>
                 <img
-                  class='m-auto'
+                  class='m-auto opacity-75'
                   src='/images/skills/javascript.svg'
                   alt='JavaScript Logo'
                   width='75'
@@ -156,7 +156,7 @@ export default function App() {
 
               <figure class='flex-1 text-center'>
                 <img
-                  class='m-auto'
+                  class='m-auto opacity-75'
                   src='/images/skills/typescript.svg'
                   alt='TypeScript Logo'
                   width='75'
@@ -167,7 +167,7 @@ export default function App() {
 
               <figure class='flex-1 text-center'>
                 <img
-                  class='m-auto'
+                  class='m-auto opacity-75'
                   src='/images/skills/csharp.svg'
                   alt='C# Logo'
                   width='75'
@@ -178,7 +178,7 @@ export default function App() {
 
               <figure class='flex-1 text-center'>
                 <img
-                  class='m-auto'
+                  class='m-auto opacity-75'
                   src='/images/skills/go.svg'
                   alt='Go Logo'
                   width='75'
@@ -189,7 +189,7 @@ export default function App() {
 
               <figure class='flex-1 text-center'>
                 <img
-                  class='m-auto'
+                  class='m-auto opacity-75'
                   src='/images/skills/python.svg'
                   alt='Python Logo'
                   width='75'
@@ -197,17 +197,6 @@ export default function App() {
                 />
                 <figcaption class='text-forest-500 mt-1'>Python</figcaption>
               </figure>
-              {/* 
-              <figure class='flex-1 text-center'>
-                <img
-                  class='m-auto'
-                  src='/images/skills/rust.webp'
-                  alt='Rust Logo'
-                  width='75'
-                  height='75'
-                />
-                <figcaption class='text-forest-500 mt-1'>Rust</figcaption>
-              </figure> */}
             </div>
 
             <p class='text-forest-500 mt-1'>Also: Rust, C++, HTML, CSS, SQL</p>
@@ -232,7 +221,7 @@ export default function App() {
 
               <figure class='flex-1 text-center'>
                 <img
-                  class='m-auto'
+                  class='m-auto opacity-75'
                   src='/images/skills/react.svg'
                   alt='ReactJS Logo'
                   width='75'
@@ -243,7 +232,7 @@ export default function App() {
 
               <figure class='flex-1 text-center'>
                 <img
-                  class='m-auto'
+                  class='m-auto opacity-75'
                   src='/images/skills/dotnet.svg'
                   alt='.NET Logo'
                   width='75'
@@ -254,7 +243,7 @@ export default function App() {
 
               <figure class='flex-1 text-center'>
                 <img
-                  class='m-auto'
+                  class='m-auto opacity-75'
                   src='/images/skills/azure-functions.svg'
                   alt='Azure Functions Logo'
                   width='75'
@@ -288,7 +277,7 @@ export default function App() {
 
               <figure class='flex-1 text-center'>
                 <img
-                  class='m-auto'
+                  class='m-auto opacity-75'
                   src='/images/skills/cloudflare.svg'
                   alt='Cloudflare Logo'
                   width='75'
@@ -301,7 +290,7 @@ export default function App() {
 
               <figure class='flex-1 text-center'>
                 <img
-                  class='m-auto'
+                  class='m-auto opacity-75'
                   src='/images/skills/postman.svg'
                   alt='Postman Logo'
                   width='75'
@@ -312,7 +301,7 @@ export default function App() {
 
               <figure class='flex-1 text-center'>
                 <img
-                  class='m-auto'
+                  class='m-auto opacity-75'
                   src='/images/skills/twilio.svg'
                   alt='Twilio Logo'
                   width='75'
@@ -323,7 +312,7 @@ export default function App() {
 
               <figure class='flex-1 text-center'>
                 <img
-                  class='m-auto'
+                  class='m-auto opacity-75'
                   src='/images/skills/git.svg'
                   alt='Git Logo'
                   width='75'
@@ -348,7 +337,7 @@ export default function App() {
               alt='University of Akron Logo'
               width='212'
               height='92'
-              class='flex-none self-center'
+              class='flex-none self-center opacity-75'
             />
 
             <div class='flex-1'>
@@ -647,7 +636,7 @@ export default function App() {
             <a class='underline text-forest-700' href='https://solidjs.com/'>
               SolidJS
             </a>
-            ,
+            ,{' '}
             <a
               class='underline text-forest-700'
               href='https://tailwindcss.com/'
