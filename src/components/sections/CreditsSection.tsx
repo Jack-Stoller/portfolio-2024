@@ -11,7 +11,7 @@ export const CreditsSection = () => {
         <A to='https://tailwindcss.com/'>Tailwind CSS</A>, and{' '}
         <A to='https://www.typescriptlang.org'>TypeScript</A> in{' '}
         <A to='https://code.visualstudio.com/'>Visual Studio Code</A>. The
-        source code is available on <A to='#'>GitHub</A>. The layout is inspired
+        source code is available on <A to='https://github.com/Jack-Stoller/portfolio-2024'>GitHub</A>. The layout is inspired
         by <A to='https://brittanychiang.com/'>Brittany Chiang's website</A>.
         Brand graphics were sourced from their respective websites. Additional
         graphics were created using{' '}

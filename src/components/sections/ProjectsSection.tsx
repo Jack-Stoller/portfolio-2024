@@ -91,7 +91,7 @@ export const ProjectsSection = () => {
             in ReactJS. It uses Firebase as a backend for authentication and
             data storage. Websockets are used to provide real-time updates to
             the interface as changes are made. The code for this project is
-            available on <A to='#'>GitHub</A>.
+            available on <A to='https://github.com/Jack-Stoller/swimxo'>GitHub</A>.
           </p>
           <img
             src='/images/projects/swimxo-logo.svg'
@@ -120,8 +120,8 @@ export const ProjectsSection = () => {
           government regulation on data security, encryption and user privacy.
           It was originally created as a capstone project in one of my
           undergraduate courses. It uses Three.js to show interactive 3D models.
-          The code for this project is available on <A to='#'>GitHub</A>. A live
-          version of the report can be viewed <A to='#'>here</A>.
+          The code for this project is available on <A to='https://github.com/Jack-Stoller/comp-encryption'>GitHub</A>. A live
+          version of the report can be viewed <A to='https://jackstoller.com/compencryption/'>here</A>.
         </P>
 
         <ImageCarouselClientComponent
