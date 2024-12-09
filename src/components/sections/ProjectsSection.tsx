@@ -135,7 +135,7 @@ export const ProjectsSection = () => {
       </Project>
 
       <A to='https://github.com/Jack-Stoller?tab=repositories'>
-        View More Project on GitHub
+        View More Projects on GitHub
       </A>
     </Section>
   );

@@ -4,7 +4,7 @@ import { A } from '../input/A';
 export const CreditsSection = () => {
   return (
     <Section title='Credits' id='credits'>
-      <p class='text-sm text-neutral-500 text-justify'>
+      <p class='text-sm text-neutral-500 text-justify pb-8'>
         This website was built from scratch using{' '}
         <A to='https://start.solidjs.com/'>Solid Start</A>,{' '}
         <A to='https://solidjs.com/'>SolidJS</A>,{' '}
