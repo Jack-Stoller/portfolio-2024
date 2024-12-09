@@ -1,3 +1,4 @@
+import { onMount } from 'solid-js';
 import { Footer } from './components/layout/Footer';
 import { Header } from './components/layout/Header';
 import { Nav } from './components/layout/Nav';
@@ -15,9 +16,17 @@ import './index.css';
 export default function App() {
   let ref;
 
-  const handleClick = () => {
-    ref!.removeAttribute('open');
-  };
+  const close = () => ref!.removeAttribute('open');
+  const isOpen = () => ref!.hasAttribute('open');
+
+  onMount(() => {
+    window.addEventListener('popstate', function (event) {
+      if (isOpen()) {
+        close();
+        event.preventDefault();
+      }
+    });
+  });
 
   return (
     <SectionObserver>
@@ -41,7 +50,7 @@ export default function App() {
           <Nav class='hidden md:flex md:flex-1' />
 
           <details class='md:hidden flex' ref={ref}>
-            <summary class='list-none marker:hidden p-4 self-center'>
+            <summary class='list-none marker:hidden p-4 self-center text-2xl'>
               <svg
                 fill='none'
                 stroke-width='2'
@@ -59,13 +68,31 @@ export default function App() {
                 <path d='M3 18 21 18'></path>
               </svg>
             </summary>
-            <div
-              class='fixed inset-0 top-0 w-full h-dvh bg-white bg-opacity-95 backdrop-blur z-10 flex flex-col content-center p-8'
-              onclick={handleClick}
-            >
+            <div class='fixed inset-0 top-0 w-full h-dvh bg-white bg-opacity-95 backdrop-blur z-10 flex flex-col content-center p-8'>
+              <button class='absolute top-10 right-10 text-2xl' onclick={close}>
+                <svg
+                  fill='none'
+                  stroke-width='2'
+                  xmlns='http://www.w3.org/2000/svg'
+                  stroke='currentColor'
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                  viewBox='0 0 24 24'
+                  height='1em'
+                  width='1em'
+                  style='overflow: visible; color: currentcolor;'
+                >
+                  <path d='M18 6 6 18'></path>
+                  <path d='M6 6 18 18'></path>
+                </svg>
+              </button>
+
               <Header class='flex-none mt-8 mb-16' />
 
-              <Nav class='flex-1 justify-center content-start' />
+              <Nav
+                class='flex-1 justify-center content-start'
+                onclick={close}
+              />
             </div>
           </details>
 

@@ -7,6 +7,7 @@ import styles from './NavItem.module.css';
 interface NavItemProps {
   to: string;
   active?: boolean;
+  onclick?: (e: MouseEvent) => void;
 }
 
 export const NavItem: ParentComponent<NavItemProps> = (props) => {
@@ -18,7 +19,7 @@ export const NavItem: ParentComponent<NavItemProps> = (props) => {
         !props.active && 'opacity-50'
       )}
     >
-      <a href={props.to}>
+      <a href={props.to} onclick={props.onclick}>
         <Dash />
         {props.children}
         <Dash />

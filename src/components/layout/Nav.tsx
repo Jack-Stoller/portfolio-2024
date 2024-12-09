@@ -6,6 +6,7 @@ import { css } from '~/utils/css';
 
 interface NavProps {
   class?: string;
+  onclick?: (e: MouseEvent) => void;
 }
 
 export const Nav: Component<NavProps> = (props) => {
@@ -34,22 +35,22 @@ export const Nav: Component<NavProps> = (props) => {
   return (
     <nav class={css('flex content-center lg:content-start flex-wrap', props.class)}>
       <ul class='flex gap-3 flex-col md:flex-row lg:flex-col h-min flex-1'>
-        <NavItem to='#about-me' active={sectionActive('about-me')}>
+        <NavItem to='#about-me' active={sectionActive('about-me')} onclick={props.onclick}>
           About Me
         </NavItem>
-        <NavItem to='#work' active={sectionActive('work')}>
+        <NavItem to='#work' active={sectionActive('work')} onclick={props.onclick}>
           Work
         </NavItem>
-        <NavItem to='#skills' active={sectionActive('skills')}>
+        <NavItem to='#skills' active={sectionActive('skills')} onclick={props.onclick}>
           Skills
         </NavItem>
-        <NavItem to='#education' active={sectionActive('education')}>
+        <NavItem to='#education' active={sectionActive('education')} onclick={props.onclick}>
           Education
         </NavItem>
-        <NavItem to='#projects' active={sectionActive('projects')}>
+        <NavItem to='#projects' active={sectionActive('projects')} onclick={props.onclick}>
           Projects
         </NavItem>
-        <NavItem to='#contact' active={sectionActive('contact')}>
+        <NavItem to='#contact' active={sectionActive('contact')} onclick={props.onclick}>
           Contact
         </NavItem>
       </ul>
