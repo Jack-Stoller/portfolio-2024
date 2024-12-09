@@ -2,6 +2,7 @@ import { Component, createSignal, onMount } from 'solid-js';
 import { NavItem } from '../display/NavItem';
 import { useSectionObservation } from './SectionObserver';
 import { useUrlFragment } from '~/utils/useFragment';
+import { css } from '~/utils/css';
 
 interface NavProps {
   class?: string;
@@ -31,8 +32,8 @@ export const Nav: Component<NavProps> = (props) => {
   const sectionActive = (id: string) => activeSection() === id;
 
   return (
-    <nav class={props.class}>
-      <ul>
+    <nav class={css('flex content-center lg:content-start flex-wrap', props.class)}>
+      <ul class='flex gap-3 flex-col md:flex-row lg:flex-col h-min flex-1'>
         <NavItem to='#about-me' active={sectionActive('about-me')}>
           About Me
         </NavItem>

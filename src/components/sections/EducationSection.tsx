@@ -3,7 +3,7 @@ import { Section } from '../display/Section';
 export const EducationSection = () => {
   return (
     <Section title='Education' id='education'>
-      <div class='flex flex-col sm:flex-row gap-4 sm:gap-12 align-middle'>
+      <div class='flex flex-col sm:flex-row gap-8 sm:gap-12 align-middle'>
             <img
               src='/images/ua.svg'
               alt='University of Akron Logo'

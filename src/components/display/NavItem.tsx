@@ -14,7 +14,7 @@ export const NavItem: ParentComponent<NavItemProps> = (props) => {
     <li
       class={css(
         styles.NavItem,
-        'text-forest-500 font-bold text-sm my-4 hover:opacity-100 transition-opacity',
+        'text-forest-500 font-bold text-sm hover:opacity-100 transition-opacity h-min',
         !props.active && 'opacity-50'
       )}
     >
