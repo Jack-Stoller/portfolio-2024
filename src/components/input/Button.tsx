@@ -11,7 +11,7 @@ export const Button: ParentComponent<
     <button
       {...(others as any)}
       class={css(
-        `p-3 text-neutral-800 border-2 border-neutral-500 placeholder:text-neutral-400 text-sm focus:outline-none focus:border-neutral-700 hover:bg-neutral-100`,
+        `p-3 text-neutral-800 border-2 border-neutral-500 placeholder:text-neutral-400 text-sm focus:outline-none focus:border-neutral-700 hover:bg-neutral-100 disabled:bg-neutral-100 disabled:opacity-50 disabled:cursor-not-allowed`,
         local.class as string
       )}
     />

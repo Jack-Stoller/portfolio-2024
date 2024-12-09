@@ -7,6 +7,7 @@ type FieldProps = {
   name: string;
   placeholder: string;
   required: boolean;
+  disabled?: boolean;
 } & ({
   type: 'textarea';
   rows?: number;
@@ -22,7 +23,7 @@ export const Field: Component<FieldProps> = (props) => {
         component={props.type === 'textarea' ? 'textarea' : 'input'}
         {...props}
         type={props.type === 'textarea' ? undefined : props.type}
-        class='w-full p-3 text-neutral-800 border-b-2 border-neutral-500 placeholder:text-neutral-400 text-sm focus:outline-none focus:border-neutral-700 focus:bg-neutral-100'
+        class='w-full p-3 text-neutral-800 border-b-2 border-neutral-500 placeholder:text-neutral-400 text-sm focus:outline-none focus:border-neutral-700 focus:bg-neutral-100 disabled:opacity-50 disabled:cursor-not-allowed'
       />
     </label>
   );

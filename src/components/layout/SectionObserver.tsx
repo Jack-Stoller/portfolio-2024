@@ -28,12 +28,10 @@ const SectionObserverComponent: ParentComponent = (props) => {
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-      console.log('Got entry', entry.target.id, entry);
+      const id = entry.target.id;
       if (entry.isIntersecting) {
-        const id = entry.target.id;
         setVisibleIds((prev) => [...prev, id]);
       } else {
-        const id = entry.target.id;
         setVisibleIds((prev) => prev.filter((activeId) => activeId !== id));
       }
     });
@@ -60,8 +58,5 @@ const SectionObserverComponent: ParentComponent = (props) => {
   );
 };
 
-
 export default SectionObserverComponent;
-export const SectionObserver = clientOnly(
-  () => import('./SectionObserver')
-);
+export const SectionObserver = clientOnly(() => import('./SectionObserver'));

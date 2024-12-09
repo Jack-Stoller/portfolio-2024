@@ -1,5 +1,6 @@
 import { Section } from '../display/Section';
 import { Socials } from '../display/Socials';
+import { ContactForm } from '../forms/ContactForm';
 import { A } from '../input/A';
 import { Button } from '../input/Button';
 import { Field } from '../input/Field';
@@ -22,25 +23,7 @@ export const ContactSection = () => {
         </div>
 
         <div class='flex-1'>
-          <form class='flex flex-col gap-4'>
-            <Field
-              label='Email'
-              name='email'
-              placeholder='jdoe@example.com'
-              type='email'
-              required
-            />
-            <Field
-              label='Message'
-              name='message'
-              placeholder='Your message here...'
-              type='textarea'
-              rows={3}
-              required
-            />
-
-            <Button class='w-full m-0'>Send</Button>
-          </form>
+          <ContactForm />
         </div>
 
         <Socials class='flex sm:hidden' />
