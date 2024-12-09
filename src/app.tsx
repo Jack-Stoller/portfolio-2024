@@ -30,7 +30,7 @@ export default function App() {
 
   return (
     <SectionObserver>
-      <div class='grid grid-rows-[6rem_minmax(0,1fr)] lg:grid-cols-[24rem_minmax(0,1fr)] max-w-[1280px] mx-auto xl:border-x border-neutral-600'>
+      <div class='grid grid-rows-[6rem_minmax(0,1fr)] lg:grid-rows-none lg:grid-cols-[24rem_minmax(0,1fr)] max-w-[1280px] mx-auto xl:border-x border-neutral-600'>
         <span></span>
         <aside class='border-b lg:border-b-0 lg:border-r border-neutral-600 py-4 px-8 lg:p-4 flex gap-8 lg:gap-16 justify-between lg:flex-col fixed h-24 lg:h-dvh w-full lg:w-96 bg-white bg-opacity-75 backdrop-blur z-10'>
           <Header class='hidden lg:block flex-none' />
@@ -99,7 +99,7 @@ export default function App() {
           <Footer class='flex-none hidden lg:flex' />
         </aside>
 
-        <main class='px-6 sm:px-12 lg:pt-[16rem] max-w-vw'>
+        <main class='px-6 sm:px-12 lg:pt-[16rem]'>
           <AboutMeSection />
           <WorkSection />
           <SkillsSection />
