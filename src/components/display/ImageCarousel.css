@@ -1,5 +1,5 @@
 /* smaller, dark, rounded square */
-.flickity-prev-next-button {
+.flickity-button.flickity-prev-next-button {
   width: 36px;
   height: 36px;
   /* border-radius: 5px; */
@@ -11,32 +11,32 @@
   background-position: center;
   transition: background-color 200ms;
 }
-.flickity-prev-next-button:focus {
+.flickity-button.flickity-prev-next-button:focus {
   outline: none;
   box-shadow: none;
 }
-.flickity-prev-next-button:focus-visible {
+.flickity-button.flickity-prev-next-button:focus-visible {
     @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white;
 }
 
-.flickity-prev-next-button:hover {
+.flickity-button.flickity-prev-next-button:hover {
   color: rgba(255, 255, 255, 0.1);
   background-color: currentColor;
   background-image: url(/images/image-button.svg);
 }
 /* arrow color */
-.flickity-prev-next-button .arrow {
+.flickity-button.flickity-prev-next-button .arrow {
   display: none;
 }
-.flickity-prev-next-button.no-svg {
+.flickity-button.flickity-prev-next-button.no-svg {
   color: white;
 }
 /* position outside */
-.flickity-prev-next-button.previous {
+.flickity-button.flickity-prev-next-button.previous {
   transform: scaleX(-1) translateY(-50%);
   left: 0.5em;
 }
-.flickity-prev-next-button.next {
+.flickity-button.flickity-prev-next-button.next {
   right: 0.5em;
 }
 
