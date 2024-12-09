@@ -10,17 +10,17 @@ export const ProjectsSection = () => {
     <Section title='Projects' id='projects'>
       <Project
         title='Map Utilities'
-        date='February 2024'
+        date='June 2024'
         skills={['Go', 'Web Scraping', 'goroutines', 'Google Maps API']}
       >
         <P class='mb-4'>
-          A suite of map generation tools in Go. They could create maps from a
-          variety of sources such as Google Maps and worked by fetching the
-          individual titles in parallel, caching them locally before stitching
+          This is a suite of map generation tools in Go. They create maps from a
+          variety of sources such as Google Maps. It works by fetching the
+          individual tiles in parallel, caching them locally before stitching
           them together. With these tools I was able to generate many extremely
-          detailed maps. So large in-fact most high end systems couldn't even
-          open them due to memory constrains and had to be downsized. These maps
-          were then used with a CO2 laser to produce detailed, intricate
+          detailed maps. So large in fact, most high-end systems couldn't even
+          open them due to memory constraints and had to be downsized. These
+          maps were then used with a CO2 laser to produce detailed, intricate
           physical copies.
         </P>
 
@@ -49,28 +49,31 @@ export const ProjectsSection = () => {
         <div class='flex gap-8'>
           <img
             src='/images/projects/clickhouse-logo.svg'
-            alt='ClickHouse Data Analysis'
+            alt='ClickHouse Logo'
             width='180'
             height='156'
             class='hidden sm:block flex-none m-8 opacity-75'
           />
           <P>
             This project initially started as a traditional Postgres database,
-            but moved to ClickHouse to leverage it's column based database
+            but moved to ClickHouse to leverage its column-based database
             solution to store and analyze billions of records. The records were
-            pull from a public API using a Go worker and then inserted into
+            pulled from a public API using a Go worker and then inserted into
             ClickHouse in batches. The worker was designed to be able to scale
-            both vertically and horizontally. It featured multi phase data
-            deduplication and batched database updates. The data was then
-            analyzed with optimized ClickHouse queries and visualized using
-            Grafana. The project was hosted on Oracle Cloud.
+            both vertically and horizontally. It featured multi-phase data
+            deduplication and batched database updates. The data was analyzed
+            using optimized ClickHouse queries and visualized with Grafana. With
+            ClickHouse, queries that took over 10 minutes on the Postgres
+            database would run in just a few seconds. The project was hosted on
+            Oracle Cloud and on ClickHouse, however because of the ongoing cost,
+            the project is no longer running.
           </P>
         </div>
       </Project>
 
       <Project
         title='SwimXO'
-        date='February 2024'
+        date='March 2022'
         skills={[
           'Firebase',
           'ReactJS',
@@ -82,9 +85,9 @@ export const ProjectsSection = () => {
       >
         <div class='flex gap-4 mb-4'>
           <p class='flex-1 text-forest-800 leading-5 indent-6 text-justify'>
-            SwimXO is a management system for swim instructors. It assists
+            SwimXO is a management system used by swim instructors. It assists
             swimming instructors by tracking student progress, schedules,
-            courses, and payments. The front end is a responsive webapp written
+            courses, and payments. The front end is a responsive web app written
             in ReactJS. It uses Firebase as a backend for authentication and
             data storage. Websockets are used to provide real-time updates to
             the interface as changes are made. The code for this project is
@@ -108,7 +111,7 @@ export const ProjectsSection = () => {
       </Project>
 
       <Project
-        title='Encryption Report'
+        title='May 2022'
         date='February 2024'
         skills={['Three.js', 'Web Components', 'HTML', 'CSS', 'JavaScript']}
       >
@@ -116,10 +119,9 @@ export const ProjectsSection = () => {
           An interactive and visual report that examines the evolution of U.S.
           government regulation on data security, encryption and user privacy.
           It was originally created as a capstone project in one of my
-          undergraduate courses. It uses Three.js to show interactive 3d
-          models.X The code for this project is available on{' '}
-          <A to='#'>GitHub</A>. A live version of the report can be viewed{' '}
-          <A to='#'>here</A>.
+          undergraduate courses. It uses Three.js to show interactive 3D models.
+          The code for this project is available on <A to='#'>GitHub</A>. A live
+          version of the report can be viewed <A to='#'>here</A>.
         </P>
 
         <ImageCarouselClientComponent
@@ -131,6 +133,10 @@ export const ProjectsSection = () => {
           ]}
         />
       </Project>
+
+      <A to='https://github.com/Jack-Stoller?tab=repositories'>
+        View More Project on GitHub
+      </A>
     </Section>
   );
 };

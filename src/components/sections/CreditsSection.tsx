@@ -13,8 +13,8 @@ export const CreditsSection = () => {
         <A to='https://code.visualstudio.com/'>Visual Studio Code</A>. The
         source code is available on <A to='#'>GitHub</A>. The layout is inspired
         by <A to='https://brittanychiang.com/'>Brittany Chiang's website</A>.
-        Graphics for brands were taken from their respective websites. Other
-        graphics were created with{' '}
+        Brand graphics were sourced from their respective websites. Additional
+        graphics were created using{' '}
         <A to='https://affinity.serif.com/en-us/designer/'>Affinity Designer</A>
         .
       </p>

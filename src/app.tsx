@@ -8,7 +8,7 @@ import { ContactSection } from './components/sections/ContactSection';
 import { CreditsSection } from './components/sections/CreditsSection';
 import { EducationSection } from './components/sections/EducationSection';
 import { ProjectsSection } from './components/sections/ProjectsSection';
-import { SkillsSection } from './components/sections/SkillSection';
+import { SkillsSection } from './components/sections/SkillsSection';
 import { WorkSection } from './components/sections/WorkSection';
 
 import './index.css';

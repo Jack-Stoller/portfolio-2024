@@ -25,20 +25,20 @@ export const WorkSection = () => {
         </div>
         <ul class='flex-1 text-neutral-800 list-disc leading-5 pl-4'>
           <li class='my-2'>
-            Design and develop numerous business grade applications,
-            integrations and solutions for small and medium sized companies
+            Design and develop numerous business-grade applications,
+            integrations, and solutions for small and medium sized companies
             across the country
           </li>
           <li class='my-2'>
-            Work with many teams to build solutions deployed in cloud, on
-            premise, and in hybrid environments
+            Collaborate with coworkers to architect the simplest solutions for
+            complex problems in cloud, hybrid and on-premise environments
           </li>
           <li class='my-2'>
-            Prioritize and handle over 5 large projects at a time while also
-            taking classes full time
+            Ensure compliance with industry standards and best practices
+            including HIPAA, PCI, and ISO standards
           </li>
           <li class='my-2'>
-            Mentor and review projects of other new coworkers or interns
+            Review projects from and mentor new coworkers and interns.
           </li>
         </ul>
       </div>
