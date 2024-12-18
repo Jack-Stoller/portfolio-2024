@@ -111,8 +111,8 @@ export const ProjectsSection = () => {
       </Project>
 
       <Project
-        title='May 2022'
-        date='February 2024'
+        title='Encryption Report'
+        date='May 2022'
         skills={['Three.js', 'Web Components', 'HTML', 'CSS', 'JavaScript']}
       >
         <P class='mb-4'>
@@ -121,7 +121,7 @@ export const ProjectsSection = () => {
           It was originally created as a capstone project in one of my
           undergraduate courses. It uses Three.js to show interactive 3D models.
           The code for this project is available on <A to='https://github.com/Jack-Stoller/comp-encryption'>GitHub</A>. A live
-          version of the report can be viewed <A to='https://jackstoller.com/compencryption/'>here</A>.
+          version of the report can be viewed <A to='https://projects.jackstoller.com/compencryption/'>here</A>.
         </P>
 
         <ImageCarouselClientComponent
